@@ -8,18 +8,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "estart": "set ELECTRON_DVELOP=true && electron . ",
-    "package": "electron-packager ./ --platform=win32 --arch=x64 --out=./package --overwrite --asar --electron-version=4.1.4"
+    "package": "electron-packager ./ --platform=win32 --arch=x64 --out=./package --asar --overwrite --electron-version=4.1.4 --ignore=node_modules"
   },
   "devDependencies": {
+    "antd": "^3.16.5",
     "electron": "^4.1.4",
     "electron-packager": "^13.1.1",
-    "react-scripts": "^3.0.0"
-  },
-  "dependencies": {
-    "antd": "^3.16.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.0"
   },
   "browserslist": [
     ">0.2%",

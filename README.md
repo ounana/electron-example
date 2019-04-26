@@ -29,5 +29,6 @@
   --electron-version -> electron version
   --asar -> open asar
   --icon -> icon path
-  
+  --ignore -> node_modules
+
 ```
