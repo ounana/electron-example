@@ -25,7 +25,7 @@
   --platform -> darwin | linux | mas | win32
   --arch -> 64
   --overwrite -> cover
-  --app-version -> app version
+  --app-version -> default pageage.json version
   --electron-version -> electron version
 
 ```
