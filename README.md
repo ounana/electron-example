@@ -16,3 +16,17 @@
   npm run build
   npm run package
 ```
+### help
+```
+  electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> --out <out> 
+
+  <sourcedir> 资源目录
+  <appname> 默认pageage.json中 name
+  --platform -> darwin | linux | mas | win32
+  --arch -> 64
+  --overwrite  强制覆盖
+  --app-version -> 0.0.1
+
+```
+
+
