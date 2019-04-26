@@ -28,5 +28,6 @@
   --app-version -> default pageage.json version
   --electron-version -> electron version
   --asar -> open asar
+  --icon -> icon path
   
 ```
