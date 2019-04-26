@@ -27,5 +27,6 @@
   --overwrite -> cover
   --app-version -> default pageage.json version
   --electron-version -> electron version
-
+  --asar -> open asar
+  
 ```
