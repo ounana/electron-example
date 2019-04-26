@@ -18,15 +18,14 @@
 ```
 ### help
 ```
-  electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> --out <out> 
+  electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> --out=<outdir> 
 
-  <sourcedir> 资源目录
-  <appname> 默认pageage.json中 name
+  <sourcedir> -> source dir
+  <appname> -> default pageage.json name
   --platform -> darwin | linux | mas | win32
   --arch -> 64
-  --overwrite  强制覆盖
-  --app-version -> 0.0.1
+  --overwrite -> cover
+  --app-version -> app version
+  --electron-version -> electron version
 
 ```
-
-

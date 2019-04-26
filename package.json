@@ -8,7 +8,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "estart": "set ELECTRON_DVELOP=true && electron . ",
-    "package": "electron-packager ./ --platform=win32 --arch=x64 --out ./package --overwrite --electron-version=4.1.4"
+    "package": "electron-packager ./ --platform=win32 --arch=x64 --out=./package --overwrite --electron-version=4.1.4"
   },
   "devDependencies": {
     "electron": "^4.1.4",
