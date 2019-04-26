@@ -11,7 +11,7 @@
   npm start
   npm run estart
 ```
-### 打包
+### 打包构建
 ```
   npm run build
   npm run package
