@@ -28,7 +28,8 @@
   --app-version -> default pageage.json version
   --electron-version -> electron version
   --asar -> open asar
-  --icon -> icon path
+  --icon -> icon path, mac:.icns win:.ico
   --ignore -> node_modules
+  --electron-version -> If omitted, it will use the version of the nearest local installation of electron
 
 ```
