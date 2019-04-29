@@ -8,7 +8,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "estart": "set ELECTRON_DVELOP=true && electron . ",
-    "package": "electron-packager ./ --platform=win32 --arch=x64 --out=./package --overwrite --ignore=node_modules"
+    "package": "electron-packager ./ --platform=win32 --arch=x64 --out=./package --overwrite --asar --ignore=node_modules --ignore=src"
   },
   "devDependencies": {
     "antd": "^3.16.5",
