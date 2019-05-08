@@ -2,7 +2,7 @@
   "name": "electron-example",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "app/main.js",
   "homepage": ".",
   "scripts": {
     "start": "react-scripts start",

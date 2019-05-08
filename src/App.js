@@ -13,10 +13,15 @@ export default function App() {
       console.log(error.message)
     }
   }
+  function newWin(){
+    const { electron }=window
+    console.log(electron)
+  }
   return (
     <div>
       <Button onClick={open}>C盘</Button>
       <div>{files.map((file, index) => <Tag key={index}>{file}</Tag>)}</div>
+      <Button onClick={newWin}>new</Button>
     </div>
   )
 }

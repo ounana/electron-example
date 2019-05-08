@@ -1,10 +1,21 @@
-const {app, BrowserWindow} = require('electron')
-
+//主进程
+const { app, BrowserWindow, Menu } = require('electron')
 // 保留窗口对象的全局引用，如果不保留，
 // 则窗口javascript对象将被垃圾收集时自动关闭。
 let mainWindow
 
-function createWindow () {
+// const template = [{
+//   label: '退出',
+//   accelerator: 'Command+Q',
+//   click: function () {
+//     app.quit()
+//   }
+// }]
+// const menu = Menu.buildFromTemplate(template)
+// Menu.setApplicationMenu(menu)
+
+function createWindow() {
+
   // 创建浏览器窗口
   mainWindow = new BrowserWindow({
     width: 1200,
@@ -13,12 +24,12 @@ function createWindow () {
       nodeIntegration: true
     }
   })
-  
+
   //加载url
-  if(process.env.ELECTRON_DVELOP){
+  if (process.env.ELECTRON_DVELOP) {
     mainWindow.loadURL('http://127.0.0.1:3000/')
-  }else{
-    mainWindow.loadFile('index.html')
+  } else {
+    mainWindow.loadFile('build/index.html')
   }
 
   // 是否开启调试
