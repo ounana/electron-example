@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import 'antd/dist/antd.css';
 import { Button, Tag } from 'antd'
 
-export default function App() {
+export default () => {
   const [files, setFiles] = useState([])
   function open() {
     const { fs } = window
@@ -13,15 +13,15 @@ export default function App() {
       console.log(error.message)
     }
   }
-  function newWin(){
-    const { electron }=window
+  function click() {
+    const { electron } = window
     console.log(electron)
   }
   return (
     <div>
       <Button onClick={open}>C盘</Button>
       <div>{files.map((file, index) => <Tag key={index}>{file}</Tag>)}</div>
-      <Button onClick={newWin}>new</Button>
+      <Button onClick={click}>btn</Button>
     </div>
   )
 }
